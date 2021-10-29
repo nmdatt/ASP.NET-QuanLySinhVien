@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="btl_CSLT3.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!--Chèn file style.css-->
+    <link href="Css/style1.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+       .auto-style2 {
+            float: left;
+            width: 164px;
+            border: 1px solid #ff6a00;
+            height: 150px;
+        }
+        .auto-style3 {
+            float: left;
+            width: 830px;
+            border: 1px solid #d71fde;
+            height: 150px;
+        }
+        .auto-style4 {
+            height: 27px;
+        }
+        .auto-style5 {
+            height: 18px;
+        }
+        .auto-style6 {
+            height: 198px;
+        }
+        .auto-style9 {
+            width: 162px;
+            height: 147px;
+        }
+        .auto-style26 {
+            float: left;
+            width: 996px;
+            margin-left: 0px;
+            height: 450px;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body id="body">
+    <form id="form1" runat="server">
+        <div id="mainWap">
+            <div id="header">
+                <div class="auto-style2"><!--Chèn ảnh logo hvtc-->
+                    <img alt="" class="auto-style9" src="Img/hvtc.jpg" /></div>
+         <!--Chỉnh sửa banner-->
+                <div class="auto-style3" style=" font-size: x-large; font-weight: bold; background-color: #CCFFFF; text-align: center; color: #800000;">
+                    <br />
+                    HỌC VIỆN TÀI CHÍNH
+                    <br />
+                    ACADEMY OF FINANCE<p class="auto-style5" style="font-size: large; text-align: center" />
+                        &nbsp;<p class="auto-style4" style="font-size: x-large; text-align: center; color: #000000;" />
+                    CỔNG THÔNG TIN QUẢN LÝ SINH VIÊN<br />
+                </div>
+         <div class="auto-style26">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer"> <!--Chỉnh sửa thẻ footer. Tạo bảng gồm 4 cột 2 hàng-->
+                <table border="0" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0); font-family:Times New Roman; font-weight: 400;  orphans: 2; text-align: start;  widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(225, 225, 225);" width="100%" class="auto-style6" id="tblfooter">
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF;"><b style="font-size: medium">CỔNG THÔNG TIN QUẢN LÝ SINH VIÊN HỌC VIỆN TÀI CHÍNH</b></td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;">Địa chỉ: Số 58 Lê Văn Hiến, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;">Cơ quan chủ quản: Học viện Tài chính</td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;"> Điện thoại: 0243.8389326 | Fax: 0243.8388906</td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF;"></td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;"> E-mail: hocvientaichinh@hvtc.edu.vn | Website: hvtc.edu.vn</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" height="20" style="background-color: #66FFFF;">
+                            <p align="center" style="font-size: medium">
+                                Designed by : Thái Anh Dũng | Nguyễn Mạnh Đạt | Phạm Thị Thảo Ly | Nguyễn Thị Lệ Thu</p>
+                            <p align="center" style="font-size: medium">
+                                Lớp: CQ56/41.02LT</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

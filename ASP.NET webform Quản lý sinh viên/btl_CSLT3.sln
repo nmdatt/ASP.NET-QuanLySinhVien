@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "btl_CSLT3", "btl_CSLT3\btl_CSLT3.csproj", "{CEDA219E-9349-4E21-8D64-5F69524E16B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEDA219E-9349-4E21-8D64-5F69524E16B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEDA219E-9349-4E21-8D64-5F69524E16B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEDA219E-9349-4E21-8D64-5F69524E16B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEDA219E-9349-4E21-8D64-5F69524E16B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8BA136C-8DD0-4671-BEC9-EF3E176F655C}
+	EndGlobalSection
+EndGlobal

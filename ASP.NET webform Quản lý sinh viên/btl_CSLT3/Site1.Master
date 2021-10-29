@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="btl_CSLT3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+    </title>
+    <!--Chèn file style.css-->
+    <link href="Css/Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            float: left;
+            width: 164px;
+            border: 1px solid #ff6a00;
+            height: 150px;
+        }
+        .auto-style3 {
+            float: left;
+            width: 830px;
+            border: 1px solid #d71fde;
+            height: 150px;
+        }
+        .auto-style4 {
+            height: 27px;
+        }
+        .auto-style5 {
+            height: 18px;
+        }
+        .auto-style6 {
+            height: 198px;
+        }
+        .auto-style7 {
+            clear: both;
+            height: 1px;
+        }
+        .auto-style8 {
+            height: 21px;
+        }
+        .auto-style9 {
+            width: 162px;
+            height: 147px;
+        }
+        .auto-style15 {
+            width: 19px;
+            height: 21px;
+        }
+        .auto-style16 {
+            width: 115px;
+            height: 35px;
+        }
+        .auto-style17 {
+            width: 166px;
+            height: 35px;
+        }
+        .auto-style19 {
+            width: 211px;
+            height: 27px;
+        }
+        .auto-style20 {
+            width: 211px;
+            height: 32px;
+        }
+        .auto-style21 {
+            height: 25px;
+        }
+        .auto-style22 {
+            width: 166px;
+            height: 25px;
+        }
+        .auto-style23 {
+            width: 115px;
+            height: 25px;
+        }
+        .auto-style24 {
+            height: 125px;
+            width: 196px;
+        }
+        .auto-style25 {
+            height: 21px;
+            width: 539px;
+        }
+        </style>
+</head>
+<body id="body">
+    <form id="form1" runat="server">
+        <div id="mainWap">
+            <div id="header">
+                <div class="auto-style2"><!--Chèn ảnh logo hvtc-->
+                    <img alt="" class="auto-style9" src="Img/hvtc.jpg" /></div>
+         <!--Chỉnh sửa banner-->
+                <div class="auto-style3" style=" font-size: x-large; font-weight: bold; background-color: #CCFFFF; text-align: center; color: #800000;">
+                    <br />
+                    HỌC VIỆN TÀI CHÍNH
+                    <br />
+                    ACADEMY OF FINANCE<p class="auto-style5" style="font-size: large; text-align: center" />
+                        &nbsp;<p class="auto-style4" style="font-size: x-large; text-align: center; color: #000000;" />
+                    CỔNG THÔNG TIN QUẢN LÝ SINH VIÊN<br />
+                </div>
+                <div class="clr">
+                <div class="menu"><!--Chỉnh sửa menu. Tạo bảng gồm 3 cột chứa thời gian, trang chủ và đăng nhập-->
+                    <table style="color: rgb(0, 0, 0); font-family:Times New Roman; font-size: medium; font-weight: 400;  orphans: 2; text-align: right; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(183, 222, 225); padding: 3px; border-width: 1px; border-style: solid; border-color: gray;" width="100%" id="tblmenu">
+                        <tr>
+                            <td align="left" class="auto-style8"><i><font color="darkblue">
+                                <asp:Label ID="Lbdatetime" runat="server"></asp:Label></font></i></td>
+                            <td align="right" language="C#" class="auto-style25" style="font-size: large"><a href="trangchu.aspx" style="text-decoration: none;" ><font color="darkblue">Trang chủ</font></a><span>&nbsp;</span>&nbsp;<b>|&nbsp;</b><a href="gioithieu.aspx" style="text-decoration: none;"><font color="darkblue">Giới thiệu</font></a><span>&nbsp;</span>&nbsp;<b>|&nbsp;</b>
+                                <a href="Search.aspx" style="text-decoration: none;"><font color="darkblue">Tìm kiếm</font></a><span>&nbsp;</span>&nbsp;<b>|&nbsp;</b>
+                                <a href="huongdan.aspx" style="text-decoration: none;"><font color="darkblue">Hướng dẫn</font></a>&nbsp;<b>|&nbsp;</b><span>&nbsp;</span>&nbsp;</td>
+                            <td align="right" language="C#" class="auto-style8">
+                                <asp:Label ID="Label2" runat="server"></asp:Label>
+                                <asp:HyperLink ID="hldangnhap" runat="server" NavigateUrl="~/dangnhap.aspx">Đăng nhập</asp:HyperLink>
+                                <asp:LinkButton ID="lbdangxuat" runat="server" OnClick="lbdangxuat_Click">Đăng xuất</asp:LinkButton>
+                                &nbsp;<b>&nbsp;</b><span>&nbsp;</span></td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+            <div class="left"><!--Tạo bảng ở thanh menu left chứa CHỨC NĂNG-->
+                <table id="tblleftmenu1" border="1" bordercolor="#ffffff" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="auto-style19" style="background-color: #99CCFF"><b>CHỨC NĂNG</b></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="font-size: medium; color: #0000FF;">
+                            <img alt="" src="Img/xu.jpg"  class="auto-style15" id="xu1" /><a href="QLSV.aspx" style="text-decoration: none;" id="QLSV"> Quản lý sinh viên</a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="color: #0000FF">
+                            <img alt="" class="auto-style15" src="Img/xu.jpg" id="xu2" /><a href="Quanlylop.aspx" style="text-decoration: none;" id="lopnienche"> Quản lý lớp </a></td>
+                    </tr>
+                    <tr>
+                        <td style="color: #0000FF" class="auto-style20">
+                            <img alt="" class="auto-style15" src="Img/xu.jpg" id="xu4" /><a href="ketquarenluyen.aspx" style="text-decoration: none;" id="DRL"> Kết quả rèn luyện</a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="color: #0000FF">
+                            <img alt="" class="auto-style15" src="Img/xu.jpg" id="xu5" /> <a href="kehoachgiangday.aspx" style="text-decoration: none;" id="KHGD">Kế hoạch giảng dạy</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="color: #0000FF">
+                            <img alt="" class="auto-style15" src="Img/xu.jpg" id="xu6" /><a href="Doimatkhau.aspx" style="text-decoration: none;" id="doimatkhau"> Đổi mật khẩu</a></td>
+                    </tr>
+                </table>
+                <!--Tạo bảng ở thanh menu left chứa THÔNG TIN-->
+                <table id="tblleftmenu2" border="0" bordercolor="#c2dcc4" cellpadding="0" cellspacing="0" class="auto-style24">
+                    <tr>
+                        <td colspan="2" style="background-color: #99CCFF" class="auto-style21"><b>THÔNG TIN HỆ THỐNG</b></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: medium" class="auto-style22">Năm học</td>
+                        <td class="auto-style23" style="font-size: medium"> :2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: medium" class="auto-style22">Học kỳ</td>
+                        <td class="auto-style23" style="font-size: medium"> :1</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: medium" class="auto-style22">Ngày BĐHK</td>
+                        <td class="auto-style23" style="font-size: medium"> :2/8/2021</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: medium" class="auto-style17">Ngày KTHK</td>
+                        <td class="auto-style16" style="font-size: medium"> :31/12/2021</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <asp:Label ID="Label1" runat="server" Text="Số lượng truy cập:"></asp:Label>
+                            <asp:Label ID="LblLogincount" runat="server" Text="[LblLogincount]"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+            <div class="right">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="auto-style7"></div>
+            <div class="footer"> <!--Chỉnh sửa thẻ footer. Tạo bảng gồm 4 cột 2 hàng-->
+                <table border="0" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0); font-family:Times New Roman; font-weight: 400;  orphans: 2; text-align: start;  widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(225, 225, 225);" width="100%" class="auto-style6" id="tblfooter">
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF;"><b style="font-size: medium">CỔNG THÔNG TIN QUẢN LÝ SINH VIÊN HỌC VIỆN TÀI CHÍNH</b></td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;">Địa chỉ: Số 58 Lê Văn Hiến, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;">Cơ quan chủ quản: Học viện Tài chính</td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;"> Điện thoại: 0243.8389326 | Fax: 0243.8388906</td>
+                    </tr>
+                    <tr>
+                        <td height="20" style="background-color: #66FFFF;"></td>
+                        <td height="20" style="background-color: #66FFFF; font-size: medium;"> E-mail: hocvientaichinh@hvtc.edu.vn | Website: hvtc.edu.vn</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" height="20" style="background-color: #66FFFF;">
+                            <p align="center" style="font-size: medium">
+                                Designed by : Thái Anh Dũng |  Nguyễn Mạnh Đạt  | Phạm Thị Thảo Ly | Nguyễn Thị Lệ Thu</p>
+                            <p align="center" style="font-size: medium">
+                                Lớp: CQ56/41.02LT</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
